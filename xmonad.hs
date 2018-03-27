@@ -16,6 +16,7 @@ myRemoveKeys = [ (myModMask .|. shiftMask, xK_q) -- leaving xmonad in lxqt is an
 
 myAdditionalKeys = [ ((myModMask .|. shiftMask, xK_l), spawn "lxqt-leave --lockscreen")
                    , ((myModMask .|. shiftMask, xK_q), spawn "lxqt-leave --logout")
+                   , ((myModMask .|. shiftMask, xK_p), spawn "rofi -show drun")
                    ]
 
 defaults = desktopConfig { terminal           = myTerminal
